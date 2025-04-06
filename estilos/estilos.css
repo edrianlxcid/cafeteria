@@ -5,3 +5,23 @@
     box-sizing: border-box;
     background-color: yellow;
 }
+
+/* Voy a darle estilos al body */
+body{
+    background-color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+/* Voy a darle estilos al header */
+header{
+    background-color: bisque;
+    text-align: right;
+}
+
+header h1{
+    color: blue;
+}
+
+.menu{
+    text-align: center;
+}   

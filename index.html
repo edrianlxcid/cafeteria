@@ -3,49 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="estilos/estilos.css">-->
     <title>Cafetria Lxcid</title>
-    <style>
-        body {
-            background-color: black;
-        }
-
-        div{
-            width: 70%;
-            background-color: bisque;
-        }
-
-        a{
-            color: white;
-        }
-
-        .menu{
-            color: black;
-
-        }
-        
-        #btn-acerca-de{
-            background-color: black;
-            /*el padding me da margenes internos en cada elemento*/
-            padding: 10px 30px 20px 30px;
-            /*el margin me da margenes externos en cada elemento*/
-            margin: 10px 0px 10px 0px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-    </style>
 </head>
-<body style="background-color: aquamarine;">
+<body>
+
+    <h1>Cafeteria Lxcid</h1>
     <!--Inicio del header-->
     <header>
         <!--Menu de navegacion-->
         <div>
-            <nav>
+            <nav class="menu"> 
                 <a href="#" id="btn-acerca-de">Acerca de</a>
                 <a class="#" id="btn-menu">Menú</a>
                 <a href="#" id="btn-galeria">Galeria</a>
-                <a href="#" id="btn-ubicacion">Ubicación</a>
+                <a class="menu" href="#" id="btn-ubicacion">Ubicación</a>
             </nav>
+            <div>
+                <h1>Cafetería <span>San Francisco</span></h1>
+                <h3>Un refugio del Tiempo, Donde el corazon se abriga entre cafe y recuerdos</h3>
+            </div>
         </div>
-
     </header>
+    <!--Fin del header-->
+    <!--Inicio del main-->
+    <section>
+        <!--inicio acerca-de-->
+        <section id="acerca-de">
+            <div>
+                <div>
+                    <img src="=img/acerca-de.jpg" alt="Acerca de lobby">
+                </div>
+                <article>
+                    <h3>Acerca de</h3>
+                    <p>
+                        San Francisco de Quito, con su rica historia y encanto colonial, es el hogar de una cafetería emblemática 
+                        que ha sido testigo de generaciones de visitantes y residentes. Situada en una esquina estratégica del casco
+                        histórico, esta cafetería se ha convertido en un ícono local, donde se entremezclan la tradición quiteña y 
+                        la calidez de su gente. A lo largo de los años, ha servido como un punto de encuentro, un lugar donde se 
+                        comparten historias y se disfruta del paisaje urbano del centro histórico.
+                    </p>
+                    <p>
+                        Fundada en 1960, esta cafetería comenzó como un pequeño negocio familiar que buscaba ofrecer a los visitantes 
+                        un lugar acogedor para disfrutar del tradicional café ecuatoriano. Desde sus humildes inicios, se destacó por 
+                        la calidad de sus productos y por mantener la esencia de los sabores locales. A medida que pasaron los años, 
+                        la cafetería creció, pero sin perder su espíritu tradicional, lo que la convirtió en un espacio imprescindible 
+                        para locales y turistas.
+                    </p>
+                    <p>
+                        Entre las características más notables de esta cafetería están sus amplios ventanales que ofrecen vistas al 
+                        histórico convento de San Francisco, su decoración que combina elementos coloniales con detalles modernos, 
+                        y su menú, que incluye café cultivado en las montañas ecuatorianas, acompañado de delicias como humitas, 
+                        quimbolitos y empanadas de viento. Además, su ambiente cálido y acogedor refleja el espíritu de Quito, 
+                        haciendo que cada visita sea una experiencia inolvidable.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+    </section>
 </body>
 </html>
