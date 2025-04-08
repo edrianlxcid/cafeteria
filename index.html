@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="estilos/estilos.css">-->
-    <title>Cafetria Lxcid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Cafetria San Pancho</title>
 </head>
 <body>
-
-    <h1>Cafeteria Lxcid</h1>
     <!--Inicio del header-->
     <header>
         <!--Menu de navegacion-->
-        <div>
+        <div class="contenedor">
             <nav class="menu"> 
                 <a href="#" id="btn-acerca-de">Acerca de</a>
                 <a class="#" id="btn-menu">Menú</a>
                 <a href="#" id="btn-galeria">Galeria</a>
                 <a class="menu" href="#" id="btn-ubicacion">Ubicación</a>
             </nav>
-            <div>
+            <div class="texto">
                 <h1>Cafetería <span>San Francisco</span></h1>
                 <h3>Un refugio del Tiempo, Donde el corazon se abriga entre cafe y recuerdos</h3>
             </div>
@@ -32,7 +33,7 @@
         <section id="acerca-de">
             <div>
                 <div>
-                    <img src="=img/acerca-de.jpg" alt="Acerca de lobby">
+                    <img src="img/9.jpg" alt="Acerca de lobby">
                 </div>
                 <article>
                     <h3>Acerca de</h3>
@@ -59,8 +60,98 @@
                     </p>
                 </article>
             </div>
-        </section>
-
+        </section> <!--Fin acerca-de-->
+        <!--Inicio de la seccion menu-->
+        <section class="menu">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos">Menú</h3>
+                <div class="contenedor-menu2">
+                    <article>
+                        <p class="categoria">De comer</p>
+                        <div class="platillo">
+                            <p class="nombre">Arroz con camarón</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">El arroz con camarón, camarón, platano, yuca frita</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Guatipollo</p>
+                            <p class="precio">$6.50</p>
+                            <p class="descripcion">El guatipollo, pollo, arroz, ensalada</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Parrillada</p>
+                            <p class="precio">$10.50</p>
+                            <p class="descripcion">La parrillada, carne, chorizo, ensalada</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Caldo de patas</p>
+                            <p class="precio">$7.50</p>
+                            <p class="descripcion">El caldo, patas, mote, oregano</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Hornado</p>
+                            <p class="precio">$9.50</p>
+                            <p class="descripcion">El hornado, cerdo, mote, ensalada</p>
+                        </div>
+                    </article><!--Fin de la seccion de comidas-->
+                    <!--Inicio de la seccion de bebidas-->
+                    <article>
+                        <p class="categoria">Bebidas</p>
+                        <div class="platillo">
+                            <p class="nombre">Café</p>
+                            <p class="precio">$1.50</p>
+                            <p class="descripcion">Café americano</p>
+                        </div>
+                        <div>
+                            <p class="nombre">Café con leche</p>
+                            <p class="precio">$2.00</p>
+                            <p class="descripcion">Café con leche</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Juego de naranja</p>
+                            <p class="precio">$2.50</p>
+                            <p class="descripcion">Jugo natural de naranja sin azucar</p>
+                        </div>
+                    </article><!--Fin de la seccion de bebidas-->
+                </div>
+            </div>
+        </section><!--Fin de la seccion menu-->
+        <!--Inicio de la seccion galeria-->
+        <section class="galeria" id="galeria">
+            <div class="foto">
+                <img src="img/1.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/2.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/3.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/4.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/5.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/6.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/7.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/8.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/9.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/10.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/11.jpg" alt="cafe">
+            </div>
+        </section> <!--Fin de la seccion galeria-->
     </section>
 </body>
 </html>

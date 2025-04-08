@@ -1,4 +1,4 @@
-/*Aqui va a ir los estilos css para el index.htlm*/
+/*Aqui va a ir los estilos css para el index.htlm*
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +6,13 @@
     background-color: yellow;
 }
 
-/* Voy a darle estilos al body */
+/* Voy a darle estilos al body 
 body{
     background-color: azure;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
 }
-/* Voy a darle estilos al header */
+/* Voy a darle estilos al header 
 header{
     background-color: bisque;
     text-align: right;
@@ -24,4 +24,63 @@ header h1{
 
 .menu{
     text-align: center;
-}   
+}*/
+
+/*Aqui va a ir los estilos css apra el index.html*/
+*{ 
+    /*Elimina el margen por defecto de todos los elementos html*/
+    margin: 0;
+    /*Elimina el padding por defecto de todos los elementos html*/
+    padding: 0;
+    /* Definimos el modelo de cajas para navegadores basados en webkit
+    googleChrome, internetexplorer,edge*/
+    -webkit-box-sizing: border-box;
+    /*
+    Definimos el mode de cajas para navegadores basados en mozilla
+    firefox, opera*/
+    -moz-box-sizing: border-box;
+    /* Definimos el modelo de cajas para navegadores basados en el estandar*/
+    box-sizing: border-box;
+}
+/* Definimos los estilos para el body*/
+
+body{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* trabajamos en los estilos de la clase contenedor*/
+.contenedor{
+    /* Definimos el ancho del contenedor*/
+    width: 90%;
+    /* Definimos el color de fondo del contenedor*/
+    background-color: aqua;
+    /* definimos la anchura maxima del contenedor*/
+    max-width: 1000px;
+    /* definimos el margen en automatico para centrar el contenedor*/
+    margin:auto;
+    /* Ocultamos el borde del contenedor*/
+    overflow: hidden;
+}
+/*Le damos estilos al header*/
+header{
+    /* Definimos el tamaño del header a un 100%*/
+    width: 100%;
+    background: url('../img/8.jpg') #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+/*Le damos estilo al header y que busque una clase  que se llame contenedor*/
+header .contenedor{
+    position: relative;
+    height: 7000px;
+}
+/*Le damos estilos al menu dentro del header*/
+header .menu{
+/*Le damo el tamaño de la anchura*/
+    width: 100%;
+    /*Le decimos que alinee el texto a la derecha*/
+    text-align: right;
+}
