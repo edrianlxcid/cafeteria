@@ -327,6 +327,12 @@ footer{
 }
 
 /*-----------MEDIA QUERIES-----------*/
+/*Las media queries en CSS son una herramienta poderosa que permite aplicar estilos diferentes a un sitio web según 
+las características del dispositivo del usuario, como el ancho o la altura de la pantalla, la orientación (vertical u 
+horizontal) o incluso la resolución. Son fundamentales para diseñar sitios web responsivos, es decir, que se adapten de 
+manera óptima a distintas pantallas, como computadoras, tablets o teléfonos móviles.*/
+
+
 @media screen and (max-width: 800px){ /*Este bloque define estilos que se aplican cuando el ancho de la pantalla es de 800px o menos. 
     Esto puede ser útil para dispositivos como tablets y móviles.*/
     header .contenedor{
