@@ -257,3 +257,157 @@ header .texto h3{
     -o-transition: all 3.5s ease;
     transition: all 0.3s ease;
 }
+
+/*----UBICACION---*/
+
+.main .ubicacion{
+    background: #ffffff; 
+    padding: 60px; 
+    overflow: hidden; /*el over flow es para que no se desborde el contenedor*/
+}
+
+.main .ubicacion .titulo{
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .ubicacion .direccion{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.main .ubicacion .horarios{
+    float: right;
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+}
+
+.main .ubicacion .direccion .calle{
+    margin-bottom: 15px;
+}
+
+.main .ubicacion .horarios h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.main .mapa{
+    width: 50%;
+    overflow: hidden;
+    
+}
+
+.main .mapa iframe{
+    width: 100%;
+    max-height: 600px;
+}
+
+/*--footer--*/
+
+footer{
+    background: #8f3b41;
+}
+
+.contenedor .copyrigth{
+    text-align: center;
+    padding: 8px;
+    color: #c7acac;
+    font-weight: 900;
+}
+
+/*-----------MEDIA QUERIES-----------*/
+@media screen and (max-width: 800px){ /*Este bloque define estilos que se aplican cuando el ancho de la pantalla es de 800px o menos. 
+    Esto puede ser útil para dispositivos como tablets y móviles.*/
+    header .contenedor{
+        position: static;  /*es distinto al header .contenedor por la adptavilidad que pude tener en la web, lo que oblida a mantenerse estatico al condicionar con max-width*/
+        height: auto;
+    }
+
+    header .texto{
+        position: static;
+        margin: 100px 0;
+    }
+
+    header .menu{
+        text-align: center;;
+    }
+    header .menu a{
+        margin: 10px 20px;   /*aqui se aplican estilos en base a dispositvos de maximo 800px, se lo realiza como un estilo css normal pensado en dispositvos*/
+    }
+
+    header .texto .nombre{
+        font-size: 30px;
+    }
+
+    header .texto h3{
+        font-size: 18px;
+    }
+
+    .main .acerca-de .foto{
+        width: 100%;
+        position: relative;
+    }
+    .main .acerca-de article{
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform: translate(0px, 0); /**se utiliza para posicionar elementos en el eje horizontal (X) y vertical (Y) sin moverlos realmente,
+         porque el valor 0px significa que no hay desplazamiento en ninguno de los ejes.*/
+    }
+
+    .main .menu{
+        padding-top: 300px;
+    }
+
+    .main .menu article{
+        width: 100%;
+    }
+
+    .main .galeria .foto{
+        width: 50%;
+    }
+
+    .main .mapa{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px){ /*Este bloque aplica estilos adicionales para dispositivos aún más pequeños (pantallas de 400px de ancho o menos).*/
+   
+    .main .acerca-de article h3{
+        font-size: 34px;  
+        margin-bottom: 10px;
+    }
+
+    .main .menu article .nombre,
+    .main .menu article .precio{
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .main .galeria .foto{
+        width: 100%;
+    }
+
+    .main .ubicacion .direccion{
+        margin-bottom: 15px;
+    }
+    .main .ubicacion .direccion,
+    .main .ubicacion .horarios{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}
