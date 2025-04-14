@@ -54,7 +54,7 @@ body{
     /* Definimos el ancho del contenedor*/
     width: 90%;
     /* Definimos el color de fondo del contenedor*/
-    background-color: aqua;
+    /*background-color: aqua;
     /* definimos la anchura maxima del contenedor*/
     max-width: 1000px;
     /* definimos el margen en automatico para centrar el contenedor*/
@@ -75,12 +75,185 @@ header{
 /*Le damos estilo al header y que busque una clase  que se llame contenedor*/
 header .contenedor{
     position: relative;
-    height: 7000px;
+    height: 700px;
 }
 /*Le damos estilos al menu dentro del header*/
 header .menu{
 /*Le damo el tamaño de la anchura*/
     width: 100%;
     /*Le decimos que alinee el texto a la derecha*/
-    text-align: right;
+    text-align: left;
+} 
+/*Le damos estilos a las etiquetas del menu*/
+header .menu a{
+    /*Le damos un color a las etiquetas a*/
+    color: #fff;
+    font-size: 20px;
+    /*quita el negrito de las letras*/
+    font-weight: 300;
+    /*display: inline-block;*/
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+/*Ultilizamos la pseudo clase hover para cambiar el color de las etiquetas a*/
+header .menu a:hover{
+    text-decoration: underline;
+    color: #b1117c;
+}
+header .texto{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+}
+
+header .texto .nombre{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+header .texto .nombre span{
+    font-weight: 300;
+}
+
+header .texto h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;+
+}
+
+/*---------Aca trabajamos en la seccion main-------------*/
+.main{
+    /*imagen de fondo*/
+    background: url('../img/11.jpg');
+    /*hace que la pagina se repita*/
+    background-repeat: repeat;
+}
+
+.main .acerca-de .contenedor{
+    overflow: visible;
+    position: relative;
+}
+
+.main .acerca-de .foto{
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px  rgba(0, 0, 0, .5);
+}
+
+.main .acerca-de .foto img{
+    vertical-align: top;
+    width: 100%;
+}
+
+.main .acerca-de article{
+    background-color: #fff;
+    padding: 40px;
+    width: 75%;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    float: right;
+    box-shadow: 0px 0px 15px  rgba(0, 0, 0, .5);
+}
+
+.main .acerca-de article h3{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.main .acerca-de article p{
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+/* seccion menu*/
+
+.main .menu {
+    padding-top: 650px;
+    margin-bottom: 50px;
+}
+
+.main .menu .titulo{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main .menu .contenedor-menu, 
+.main .menu .contenedor-menu2{
+  border: 1px solid #000;
+  background: transparent;  
+  padding: 10px;
+  overflow: hidden;
+}
+
+.main .menu article{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.main .menu .categoria{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}   
+
+.main .menu .platillo{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted #000;
+    overflow: hidden;
+}
+
+.main .menu .nombre{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.main .menu .precio{
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.main .menu .descripcion{
+    font-size: 16px;
+    color: #676767;
+    clear: both;
+
+}
+/*Estilos a la seccion galeria*/
+
+.main .galeria{
+    overflow: hidden;
+}
+
+.main .galeria .foto{
+    width: 25%;
+    float: left;
+}
+
+.main .galeria .foto img{
+    width: 100%;
+    vertical-align: top;
+    opacity: 0.7;
+
+}
+
+.main .galeria .foto img:hover{
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 3.5s ease;
+    transition: all 0.3s ease;
 }
